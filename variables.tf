@@ -24,6 +24,7 @@ variable "policy_attachment" {
 
 variable "inline_policy" {
   description = "Inline policies JSON to attach to SSO Permissions Set"
+  type        = string
   default     = ""
 }
 

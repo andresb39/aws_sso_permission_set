@@ -45,7 +45,7 @@
     hooks:
       - id: checkov
         verbose: true
-        args: [--soft-fail --skip-path ./example/]
+        args: [--soft-fail]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0

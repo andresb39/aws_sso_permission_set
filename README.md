@@ -1,3 +1,4 @@
+[![Run Pre-Commit](https://github.com/andresb39/aws_sso_permission_set/actions/workflows/pre-commit.yaml/badge.svg?branch=main)](https://github.com/andresb39/aws_sso_permission_set/actions/workflows/pre-commit.yaml)
 # Amazon SSO Permission set
 
 This module create identity groups and attachment policies inlines/managed and associated this groups with the accounts

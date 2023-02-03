@@ -1,5 +1,7 @@
-# aws_sso_permission_set
-Amazon SSO Permission set
+# Amazon SSO Permission set
+
+This module create identity groups and attachment policies inlines/managed and associated this groups with the accounts
+
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements

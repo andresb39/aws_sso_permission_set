@@ -50,5 +50,7 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_group_id"></a> [group\_id](#output\_group\_id) | Group ID |
 <!-- END_TF_DOCS -->

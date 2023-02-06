@@ -25,12 +25,13 @@ resource "aws_identitystore_group" "identitystore_group" {
 }
 
 resource "aws_ssoadmin_account_assignment" "account_assignment" {
+  for_each           = length(var.target_id) > 0 ? toset(var.target_id) : []
   instance_arn       = aws_ssoadmin_permission_set.sso_permission_set.instance_arn
   permission_set_arn = aws_ssoadmin_permission_set.sso_permission_set.arn
 
   principal_id   = data.aws_identitystore_group.identitystore_group.group_id
   principal_type = "GROUP"
 
-  target_id   = var.target_id
+  target_id   = each.value
   target_type = "AWS_ACCOUNT"
 }

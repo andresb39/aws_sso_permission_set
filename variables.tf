@@ -44,7 +44,7 @@ variable "description_identity" {
 #=== Account assignment ===#
 variable "target_id" {
   description = "(Required, Forces new resource) An AWS account identifier, typically a 10-12 digit string."
-  type        = string
+  type        = list(string)
 }
 
 // Tags

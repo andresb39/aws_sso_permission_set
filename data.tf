@@ -8,5 +8,5 @@ data "aws_identitystore_group" "identitystore_group" {
       attribute_value = var.display_name
     }
   }
-  depends_on = ["aws_ssoadmin_permission_set.sso_permission_set"]
+  depends_on = [aws_ssoadmin_permission_set.sso_permission_set]
 }

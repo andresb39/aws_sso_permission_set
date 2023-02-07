@@ -1,4 +1,3 @@
-#checkov:skip:CKV2_GHA_1:Comment
   repos:
   - repo: https://github.com/commitizen-tools/commitizen
     rev: v2.39.1
@@ -45,7 +44,10 @@
     hooks:
       - id: checkov
         verbose: true
-        args: [--skip-check CKV2_GHA_1]
+        args: [
+          "-d", ".",
+          "--skip-check", "CKV2_GHA_1",
+        ]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0

@@ -28,25 +28,6 @@ variable "inline_policy" {
   default     = ""
 }
 
-#=== Identity Groups ===#
-variable "display_name" {
-  description = "(Optional) A string containing the name of the group. This value is commonly displayed when the group is referenced"
-  type        = string
-  default     = ""
-}
-
-variable "description_identity" {
-  description = "(Optional) A string containing the description of the group."
-  type        = string
-  default     = ""
-}
-
-#=== Account assignment ===#
-variable "target_id" {
-  description = "(Required, Forces new resource) An AWS account identifier, typically a 10-12 digit string."
-  type        = list(string)
-}
-
 // Tags
 variable "tags" {
   description = "A map of tags to add to all resources."
